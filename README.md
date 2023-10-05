@@ -30,7 +30,7 @@ These additional references should also help you:
 
 May the force be with us
 
-## Diagrama de classes
+## Class Diagram
 
 ```mermaid
 classDiagram
@@ -64,8 +64,8 @@ classDiagram
     +description: String
   }
 
-  User -- Account : has
-  User -- Feature : has
-  User -- Card : has
-  User -- News : has
+  User "1" *-- "1" Account
+  User "1" *-- "N" Feature
+  User "1" *-- "1" Card 
+  User "1" *-- "N" News
 ```
