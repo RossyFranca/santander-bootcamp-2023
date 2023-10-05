@@ -1,4 +1,4 @@
-package com.franca.santanderbootcamp2023.model;
+package com.franca.santanderbootcamp2023.domains.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

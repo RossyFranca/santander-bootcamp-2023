@@ -1,4 +1,4 @@
-package com.franca.santanderbootcamp2023.model;
+package com.franca.santanderbootcamp2023.domains.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -17,6 +17,6 @@ public class Card {
     @Column(unique = true)
     private String number;
 
-    @Column(name = "available_limit",scale = 13, precision = 2)
+    @Column(name = "available_limit", scale = 2, precision = 13)
     private BigDecimal limit;
 }

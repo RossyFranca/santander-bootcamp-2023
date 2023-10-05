@@ -1,4 +1,4 @@
-package com.franca.santanderbootcamp2023.model;
+package com.franca.santanderbootcamp2023.domains.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -19,8 +19,8 @@ public class Account {
 
     private String agency;
 
-    @Column( scale = 13, precision = 2)
+    @Column( scale = 2, precision = 13)
     private BigDecimal balance;
-    @Column(name = "additional_limit",scale = 13, precision = 2)
+    @Column(name = "additional_limit", scale = 2, precision = 13)
     private BigDecimal limit;
 }
